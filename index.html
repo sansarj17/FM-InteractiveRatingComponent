@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Interactive rating component</title>
+
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="rating-start">
+                    <div class="img-wrapper">
+                        <img src="./images/icon-star.svg" alt="" />
+                    </div>
+                    <div class="text-component">
+                        <h1>How did we do?</h1>
+                        <p>
+                            Please let us know how we did with your support
+                            request. All feedback is appreciated to help us
+                            improve our offering!
+                        </p>
+                    </div>
+                    <div class="ratings">
+                        <div class="rating-solo" data-id="1" id="rating-1">
+                            <span>1</span>
+                        </div>
+                        <div class="rating-solo" data-id="2" id="rating-2">
+                            <span>2</span>
+                        </div>
+                        <div class="rating-solo" data-id="3" id="rating-3">
+                            <span>3</span>
+                        </div>
+                        <div class="rating-solo" data-id="4" id="rating-4">
+                            <span>4</span>
+                        </div>
+                        <div class="rating-solo" data-id="5" id="rating-5">
+                            <span>5</span>
+                        </div>
+                    </div>
+                    <div class="rating-submit">
+                        <button id="submit-btn">Submit</button>
+                    </div>
+                </div>
+                <div style="display: none" class="rating-done">
+                    <div class="top-component">
+                        <div class="img-wrapper-2">
+                            <img
+                                src="./images/illustration-thank-you.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="rating-wrapper">
+                            <p>
+                                You selected
+                                <span id="rating-selected"></span> out of 5
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-component rating-done-text">
+                        <h2>Thank you!</h2>
+                        <p>
+                            We appreciate you taking the time to give a rating.
+                            If you ever need more support, don’t hesitate to get
+                            in touch!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+		<script src="./index.js"></script>
+    </body>
+</html>
